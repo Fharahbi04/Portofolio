@@ -10,120 +10,84 @@
     }
 }
 
-/* Atur animasi untuk seluruh elemen */
+/* General Styles */
 body {
-    animation: fadeIn 1.5s ease-in-out;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Atur animasi untuk elemen gambar */
-img {
-    animation: fadeIn 2s ease-in-out;
-}
-
-/* Styling gambar */
-img {
-    width: 100%; /* Memastikan gambar responsif */
-    max-width: 500px; /* Ukuran maksimal gambar */
-    height: auto; /* Menjaga aspek rasio gambar */
-    object-fit: cover;
-    border-radius: 50%;
-    margin: auto;
-    display: block;
-}
-
-/* Atur elemen navbar dan section */
-.navbar, header, section, footer {
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Card animasi masuk */
-.card {
-    animation: fadeIn 2s ease-in-out;
-}
-
-
-
-
-/* Animasi untuk heading */
 h2 {
-    animation: fadeInDown 2s ease-out;
-    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Header Section */
+header {
+    background: #343a40;
+    color: #fff;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+}
+
+#about h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Projects Section */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+/* Contact Section */
+form label {
     font-weight: bold;
 }
 
-/* Animasi untuk form */
-form {
-    animation: slideIn 1.5s ease-out;
+form input, form textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
 }
 
-/* Animasi untuk daftar pesan */
-ul#savedMessages li {
-    animation: fadeIn 1s ease-in;
-}
-
-/* Efek hover pada tombol */
-button:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-
-/* Keyframes untuk animasi */
-@keyframes fadeInDown {
-    from {
-        opacity: 1;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 2;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Styling tambahan */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-}
-
-form {
-    border: 2px solid #ccc;
-}
-
-h2, h3 {
-    color: #333;
-}
-
-button {
-    background-color: #28a745;
+form button {
+    background: #28a745;
+    color: #fff;
     border: none;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button.btn-danger {
-    background-color: #dc3545;
+    padding: 0.75rem 1.5rem;
     border-radius: 5px;
 }
 
+form button:hover {
+    background: #218838;
+}
+
+/* Footer */
+footer {
+    background: #28a745;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
